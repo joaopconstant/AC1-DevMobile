@@ -17,4 +17,9 @@ public class TesteCalculadoraImc {
     public void testeAdultoBaixoPesoMuitoGrave() {
         Assert.assertEquals("Baixo peso muito grave",calc.calcularImc(49, 1.751, 19, "masculino" ));
     }
+
+    @Test
+    public void testeIdosoHomemObesidadeGrauI() {
+        Assert.assertEquals("Baixo peso muito grave",calc.calcularImc(49, 1.751, 19, "masculino" ));
+    }
 }

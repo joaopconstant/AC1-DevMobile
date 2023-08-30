@@ -27,33 +27,33 @@ public class CalculadoraImc {
         } else if (idade > 65) {
             if (sexo.equals("masculino")) {
                 if (imc < 21.9) {
-                    return "Baixo peso";
+                    msg = "Baixo peso";
                 } else if (imc >= 22 && imc <= 27) {
-                    return "Peso normal";
+                    msg = "Peso normal";
                 } else if (imc >= 27.1 && imc <= 30) {
-                    return "Sobrepeso";
+                    msg = "Sobrepeso";
                 } else if (imc >= 30.1 && imc <= 35) {
-                    return "Obesidade grau 1";
+                    msg = "Obesidade grau 1";
                 } else if (imc >= 35.1 && imc <= 39.9) {
-                    return "Obesidade grau 2";
+                    msg = "Obesidade grau 2";
                 } else if (imc >= 40) {
-                    return "Obesidade grau 3";
+                    msg = "Obesidade grau 3";
                 }
             }
 
             if (sexo.equals("feminino")) {
                 if (imc < 21.9) {
-                    return "Baixo peso";
+                     msg = "Baixo peso";
                 } else if (imc >= 22 && imc <= 27) {
-                    return "Peso normal";
+                    msg = "Peso normal";
                 } else if (imc >= 27.1 && imc <= 32) {
-                    return "Sobrepeso";
+                    msg = "Sobrepeso";
                 } else if (imc >= 32.1 && imc <= 37) {
-                    return "Obesidade grau 1";
+                    msg = "Obesidade grau 1";
                 } else if (imc >= 37.1 && imc <= 41.9) {
-                    return "Obesidade grau 2";
+                    msg = "Obesidade grau 2";
                 } else if (imc >= 42) {
-                    return "Obesidade grau 3";
+                    msg = "Obesidade grau 3";
                 }
             }
 
