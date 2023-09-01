@@ -9,20 +9,20 @@ public class CalculadoraImc {
         if (idade > 0 && idade <= 65) {
             if (imc < 16) {
                 msg = "Baixo peso muito grave";
-            } else if (imc >= 16 && imc <= 16.99) {
+            } else if (imc >= 16 && imc <= 16.999) {
                 msg = "Baixo peso grave";
-            } else if (imc >= 17 && imc <= 18.49) {
+            } else if (imc >= 17 && imc <= 18.499) {
                 msg = "Baixo peso";
-            } else if (imc >= 18.5 && imc <= 24.99) {
+            } else if (imc >= 18.5 && imc <= 24.999) {
                 msg = "Peso normal";
-            } else if (imc >= 25 && imc <= 29.99) {
+            } else if (imc >= 25 && imc <= 29.999) {
                 msg = "Sobrepeso";
-            } else if (imc >= 30 && imc <= 34.99) {
+            } else if (imc >= 30 && imc <= 34.999) {
                 msg = "Obesidade grau 1";
-            } else if (imc >= 35 && imc <= 39.99) {
+            } else if (imc >= 35 && imc <= 39.999) {
                 msg = "Obesidade grau 2";
             } else if (imc >= 40) {
-                msg = "Obesidade grau 3";
+                msg = "Obesidade grau 3 (Obesidade mórbida)";
             }
         } else if (idade > 65) {
             if (sexo.equals("masculino")) {
@@ -37,7 +37,7 @@ public class CalculadoraImc {
                 } else if (imc >= 35.1 && imc <= 39.9) {
                     msg = "Obesidade grau 2";
                 } else if (imc >= 40) {
-                    msg = "Obesidade grau 3";
+                    msg = "Obesidade grau 3 (Obesidade mórbida)";
                 }
             }
 
@@ -50,10 +50,10 @@ public class CalculadoraImc {
                     msg = "Sobrepeso";
                 } else if (imc >= 32.1 && imc <= 37) {
                     msg = "Obesidade grau 1";
-                } else if (imc >= 37.1 && imc <= 41.9) {
+                } else if (imc >= 37.1 && imc <= 41.99) {
                     msg = "Obesidade grau 2";
                 } else if (imc >= 42) {
-                    msg = "Obesidade grau 3";
+                    msg = "Obesidade grau 3 (Obesidade mórbida)";
                 }
             }
 
